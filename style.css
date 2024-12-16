@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+    }
+    html{
+    box-sizing: border-box;
+    }
+    body{
+    background: #222;
+    }
+    .card{
+            width: 90%;
+    max-width: 470px;
+    background-image: linear-gradient(rgb(154, 208, 245),rgb(157, 157, 226),rgb(26, 131, 211));
+    color: #fff;
+    margin: 100px auto 0;
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center;
+
+    }
+    .search{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:space-between;
+    }
+    .search input{
+   border: 0;
+   outline: 0;
+   background: #ebfffc;
+   color: #555;
+   padding: 10px 25px;
+   height: 60px;
+   border-radius:30px;
+   flex: 1;
+   margin-right: 16px;
+   font-size: 18px;
+   }
+   .search button{
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+   }
+   .temp{
+    margin-top: 20px;
+    height: 100px;
+   }
+   .cloud-icon{
+    margin-top: 20px;
+    height: 100px;
+}
+.cloud-icon h1{
+    font-size: 130px;
+    font-weight: 900px;
+    margin-top: 20px;
+}
+.cloud-icon , h2{
+    font-size: 30px;
+    font-weight: 400px;
+    margin-top: 20px;
+}
+   @media(max-width:768px){
+    .details {
+        flex: 1 1 100%;
+        margin: 0 5px;
+        padding: 10px;
+        justify-content: center;
+    }
+}
+   .details{
+    display:flex;
+    justify-content: space-around;
+    justify-content: space-between;
+    justify-content: center;
+    margin: 50px;
+    padding: 0 20px; 
+    gap: 50px;  
+}
+   .humidity-sensor{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px; 
+    height: 100px;
+}
+.humidity-sensor, p{  
+    font-weight: 300px;
+    font-size: 20px;
+}
+.wind-power{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    height: 100px;
+}
+.wind-power,p{
+    font-weight: 300px;
+    font-size: 20px;
+}
+.spinner {
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #3498db; 
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+@media (max-width: 767px) {
+    .card {
+        padding: 20px;
+    }
+
+    .search input {
+        font-size: 16px;
+        padding: 10px 15px;
+    }
+
+    .temp {
+        font-size: 36px;
+    }
+
+    .cloud-icon h1 {
+        font-size: 80px;
+    }
+
+    .details {
+        flex-direction: column;
+        gap: 30px;
+        margin: 20px;
+    }
+
+    .humidity-sensor,
+    .wind-power {
+        justify-content: center;
+    }
+
+    .humidity-sensor img,
+    .wind-power img {
+        max-width: 40px;
+    }
+}
+@media (max-width: 1024px) {
+    .card {
+        padding: 30px;
+    }
+
+    .temp {
+        font-size: 48px;
+    }
+
+    .cloud-icon h1 {
+        font-size: 100px;
+    }
+
+    .details {
+        flex-direction: row;
+        gap: 40px;
+    }
+
+    .humidity-sensor,
+    .wind-power {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 1025px) {
+    .card {
+        padding: 40px;
+    }
+
+    .temp {
+        font-size: 60px;
+    }
+
+    .cloud-icon h1 {
+        font-size: 130px;
+    }
+
+    .details {
+        flex-direction: row;
+        gap: 50px;
+    }
+}
